@@ -31,17 +31,17 @@ PixelFrame parseRawFile(File file){
   /* Read N Parse */
   List<int> data = file.readAsBytesSync();
 
-  for(int i = 1; i < data.length + 1; i++){
+  for(int i = 0; i < data.length; i++){
     switch(c++){
       case 0:
-        r = data[i - 1];
+        r = data[i];
       break;
       case 1:
-        g = data[i - 1];
+        g = data[i];
       break;
       case 2:
         c = 0;
-        b = data[i - 1];
+        b = data[i];
         frame.pixels.add(Pixel(
           r,
           g,
@@ -110,7 +110,7 @@ void main() {
       for(int i = 0; i < frame.cols; i++){
         contents += "\t\t{\n\t\t\t";
         for(int j = 0; j < frame.rows; j++){
-          int k = (j * frame.rows) + i;
+          int k = (j * frame.cols) + i;
           contents += "{${frame.pixels[k].r}, ${frame.pixels[k].g}, ${frame.pixels[k].b}},";
         }
         contents += "\n\t\t},\n";
