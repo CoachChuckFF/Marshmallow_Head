@@ -1,0 +1,10 @@
+Hi!
+
+If you are me and forgot to toggle some menuconfig options here they are!
+
+Component Config -> Blizzard Ethernet * change to LAN
+Component Config -> ESP32 Specific * change clock to 240MHz
+Component Config -> FAT FS * allow long filesnames in stack
+Component Config -> Wear Leveling * change to 512 bytes
+Component Config -> FreeRTOS * change Tick Rate to 1000
+Partition Table -> * Toggle on Custom CVS for partitions

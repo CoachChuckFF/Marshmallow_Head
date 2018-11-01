@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "typeinfo": "c",
+        "blizzard_connection_manager.h": "c",
+        "blizzard_dmx_manager.h": "c",
+        "blizzard_protocol_manager.h": "c",
+        "blizzard_vfs_manager.h": "c",
+        "stdlib.h": "c",
+        "blizzard_timer_manager.h": "c",
+        "blizzard_action_manager.h": "c"
+    }
+}
